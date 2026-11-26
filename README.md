@@ -6,9 +6,10 @@
 
 A tiny program that writes a one-line roast of a smart fridge to a text
 file. The roast is 88 characters: the fridge emails a PDF of the owner's
-eating habits, with a subject line borrowed from a relationship breakup.
-The program checks the line against the 160-character limit before
-writing, then reads the file back to confirm it holds exactly that line.
+eating habits, and the subject line is the one borrowed from a
+relationship breakup. Before writing, the program checks that the line
+is a single line, non-empty, and within the 160-character limit; after
+writing, it reads the file back and confirms it holds exactly that line.
 
 ## Run it
 
@@ -25,6 +26,8 @@ running the program twice produces byte-identical output.
 > The fridge emailed me a PDF of my eating habits with the subject line
 > 'We need to talk.'
 
-One smart feature too many: the fridge tracks what you eat, files a report
-on it, and opens with the words nobody wants to hear. Standard library
-only, no network, no arguments — `python3 main.py` is the whole interface.
+One smart feature too many: the fridge tracks what you eat, files a
+report on it, and opens with the words nobody wants to hear. The joke
+lands on the subject line — the appliance version of a conversation
+nobody asked to have. Standard library only, no network, no arguments
+— `python3 main.py` is the whole interface.
